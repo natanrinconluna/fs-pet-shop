@@ -5,15 +5,7 @@ const fs = require("fs");
 const DATA_PATH = 'pets.json';
 const petRegExp = /^\/pets\/(.*)$/;
 
-// function reapetsfile(callback){
-//     fs.readFile(DATA_PATH, 'utf-8', (err, data) => {
-//         if (err) {
-//          callback(err);
-//         }else {
-//         callback(null, JSON.parsedData);
-//         }
-//     });
-// } 
+
 
 const server = http.createServer((req, res) =>{
     if (req.method === "GET" && req.url === "/pets"){
